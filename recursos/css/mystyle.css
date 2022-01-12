@@ -1,0 +1,53 @@
+#about{
+  display: flex;
+  justify-content: center;
+
+}
+.titulo{
+  font-family: 'Oswald', sans-serif;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.conten{
+  width: 100%;
+  display: flex;
+  font-family: 'Hind Guntur', sans-serif;
+}
+.iz{
+  width: 85vw;
+  margin:2vh 2vw;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.6), 0px 2px 10px rgba(0, 0, 0, 0.12);
+  padding: 20px;
+  border-radius: 20px;
+}
+.politicas{
+  list-style-type: none;
+  counter-reset: lista-personalizada;
+  margin: 0;
+}
+.politicas li{
+  margin-top: 1em;
+  font-size: 17px;
+  position: relative;
+  line-height: 30px;
+  padding: 4px 0 10px 50px;
+  margin-bottom: 10px;
+}
+.politicas li::before{
+  content: counter(lista-personalizada);
+  counter-increment: lista-personalizada;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: bold;
+  font-size: 40px;
+  padding: 8px 8px 8px 5px;
+  color: black;
+  height: 45px;
+}
+.politicas li p{
+  margin-left: 1em;
+}
